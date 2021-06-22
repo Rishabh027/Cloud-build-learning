@@ -9,7 +9,7 @@ steps:
   - '$NPM_TOKEN'
   secretEnv: ['NPM_TOKEN']
 
-  availableSecrets:
+availableSecrets:
   secretManager:
   - versionName: projects/blissful-jet-313212/secrets/npmc-test/versions/1
     env: NPM_TOKEN

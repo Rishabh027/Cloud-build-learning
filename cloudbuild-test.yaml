@@ -1,0 +1,19 @@
+# Clone the git repo.
+steps:
+
+# This step builds the container image.
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+  - 'echo'
+  - '$NPM_TOKEN'
+  secretEnv: ['NPM_TOKEN']
+
+  availableSecrets:
+  secretManager:
+  - versionName: projects/blissful-jet-313212/secrets/npmc-test/versions/1
+    env: 'NPM_TOKEN'
+
+# substitutions:
+#   _SERVICE_NAME: sample-app
+#   _APP_PROFILE: production

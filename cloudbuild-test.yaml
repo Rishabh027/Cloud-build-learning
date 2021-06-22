@@ -6,7 +6,7 @@ steps:
   entrypoint: 'bash'
   args:
   - 'echo'
-  - '$NPM_TOKEN'
+  - '${NPM_TOKEN}'
   secretEnv: ['NPM_TOKEN']
 
 availableSecrets:

@@ -12,7 +12,7 @@ steps:
   availableSecrets:
   secretManager:
   - versionName: projects/blissful-jet-313212/secrets/npmc-test/versions/1
-    env: 'NPM_TOKEN'
+    env: NPM_TOKEN
 
 # substitutions:
 #   _SERVICE_NAME: sample-app
